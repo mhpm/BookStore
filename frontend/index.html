@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <title>Kindle</title>
+
+    <style>
+      .custom-file-input ~ .custom-file-label::after {
+        /* content: 'Elegir'; */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container">
+        <a href="/" class="navbar-brand">kindle</a>
+      </div>
+    </nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div id="colForm" class="col-md-4">
+          <form id="form-book" class="card card-body">
+            <div class="form-group">
+              <input
+                id="title"
+                placeholder="Book Title"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="author"
+                placeholder="Author"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="isbn"
+                placeholder="ISBN"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="image"
+                    aria-describedby="inputGroupFileAddon04"
+                    lang="es"
+                    placeholder="Choose file"
+                  />
+                  <label class="custom-file-label text-muted" for="image"
+                    >Choose file...</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Save book</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8" id="books-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
