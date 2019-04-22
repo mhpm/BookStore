@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./frontend/styles/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"css/bundle.css","sourcesContent":["body {\r\n  background-color: #707070;\r\n  color: white;\r\n}\r\n"],"sourceRoot":""}
